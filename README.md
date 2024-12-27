@@ -1,6 +1,8 @@
 # piSparc
 A 3D printable recreation of a Sun SparcStation IPX, designed to fit a Raspberry Pi
 
+![A 3D rendering of a miniaturised SparcStation](Images/piSparc.png?raw=true "3D Render")
+
 ### BOM
 To build the basic case you need:
 - 1 x Top
@@ -36,6 +38,11 @@ You can also use external ports for the USB ports and Ethernet ports
 - Screw the dual USB port into the top case, it uses the larger hole at the back of the top case.
 - Screw the Ethernet socket into the hole next to it.
 - If using the front USB socket you can screw this in the front of the top case.
+#### Power LED
+- 1 x 3mm Green LED
+- 1 x 330ohm resistor
+- Black and Red wire connected to two pin header connector (on both ends for ease of use)
+If you want to use a Power LED then you need a 3mm LED (ideally green), connect a 330 ohm resistor to the longest leg, connect a red wire to the resistor and a black wire to the other leg of the LED. This needs to be connected to 5v and Ground on the Pi. The best way to do that is to use the second pin from the right (as you're looking at the Pi from the front of the piSparc) for 5v (red wire) and the third pin for Ground (black wire).
 #### Putting it together
 - angle the top case so the clips do into the holes on the bottom case
 - Close the case, you may need to push the clips in to get the case to close. The two sides will be quite close in size so will need some aligning to close.
